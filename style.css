@@ -1,0 +1,169 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+}
+
+.container, .task-container {
+    width: 70vw;
+    margin: 50px auto;
+    background-color: #0D0D0D;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.logo{
+    width: 126px;
+    height: 48px;
+    margin-bottom: 20px;
+}
+#taskForm{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+label{
+    color: #FFFFFF;
+}
+#form-button{
+    background-color: #1E6F9F;
+    color: #F2f2f2;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 7px;
+}
+#taskName{
+    padding: 7px 10px;
+    border-radius: 7px;
+    color: black;
+}
+#dueDate{
+    padding: 7px 10px;
+    border-radius: 7px;
+}
+
+.todo-list{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.todo{
+    color: #4EA8DE;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.priority1{
+    color: #8284FA;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.count-element{
+    width: 24px;
+    height: 24px;
+    padding: 5px;
+    background-color: #333333;
+    border-radius: 50%;
+    color: white;
+} 
+
+.task-list{
+    width: 100%;
+}
+
+.task-item {
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+}
+
+.task-info {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 8px;
+}
+
+.taskName{
+    font-size: 16px;
+    font-weight: 400;
+    color: #f2f2f2;
+    flex: 1;
+    margin-inline-end: 5px;
+    padding: 5px 10px;
+    overflow: hidden;
+    word-wrap: break-word;
+}
+.taskDate{
+    font-size: 16px;
+    font-weight: 400;
+    color: #f2f2f2;
+    margin-inline-end: 5px;
+    padding: 5px 10px;
+}
+
+.editBtn, .deleteBtn{
+    padding: 7px 10px;
+    cursor: pointer;
+    border: none;
+    background-color: transparent;
+}
+
+.saveBtn{
+    padding: 7px 10px;
+    background-color: blue;
+    cursor: pointer;
+    border: none;
+    color: white;
+    border-radius: 7px;
+}
+
+.options{
+    display: flex;
+    justify-content: space-between;
+}
+.editable{
+    border: 2px solid gold;
+    border-radius: 5px;
+}
+
+.complete{
+    color: #808080;
+    text-decoration: line-through !important;
+}
+.no-task{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-top: 1px solid blue;
+    border-radius: 20px;
+}
+.no-task p{
+    font-size: 16px;
+    font-weight: 700;
+    color: #808080;
+}
+.hide{
+    display: none;
+}
+.high-priority{
+    border: 5px solid green !important;
+}
+
+@media screen and (max-width: 830px){
+    #taskForm{
+        flex-direction: column;
+        gap: 10px;
+        align-items: center;
+    }
+}
